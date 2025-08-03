@@ -1,0 +1,11 @@
+- name: Adrenalinrausch
+  type: Buff
+  stat: attack_power
+  value: 0.25
+  duration: 10
+
+- name: Müdigkeit
+  type: Debuff
+  stat: stamina
+  value: -0.3
+  duration: 15

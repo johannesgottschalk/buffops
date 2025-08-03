@@ -1,0 +1,5 @@
+- name: Ewiger Buff
+  type: Buff
+  stat: stamina
+  value: 0.5
+  duration: -99  # nicht erlaubt

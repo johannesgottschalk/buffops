@@ -1,0 +1,4 @@
+name,stat,value,duration
+Power Strike,attack_power,10.0,30
+Iron Will,stamina,15.0,60
+Vital Surge,health,20.0,45

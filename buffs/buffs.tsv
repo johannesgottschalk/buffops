@@ -1,0 +1,3 @@
+name	type	stat	value	duration
+Adrenalinrausch	Buff	attack_power	0.25	10
+Müdigkeit	Debuff	stamina	-0.3	15

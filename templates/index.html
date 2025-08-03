@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BuffOps Web Preview</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main>
+    <h1>🛡️ BuffOps Web Preview</h1>
+
+    <form method="post" enctype="multipart/form-data" class="card">
+      <label for="buff_file">Buff-Datei hochladen (.yaml, .yml, .json, .csv):</label>
+      <input type="file" name="buff_file" id="buff_file" required />
+      <button type="submit">Validieren & als TSV exportieren</button>
+    </form>
+
+    {% if errors %}
+      <section class="card error">
+        <h2>❌ Fehler in der Buff-Datei</h2>
+        <ul>
+          {% for error in errors %}
+            <li>{{ error }}</li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endif %}
+  </main>
+</body>
+</html>
